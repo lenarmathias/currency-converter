@@ -1,0 +1,59 @@
+.form__converterContainer {
+    height: 125px;
+    border: 1px #222 outset;
+    border-radius: 5px;
+    background-color: #222222c0;
+}
+
+.form__converterTitleContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.form__converterTitleContainer::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.form__converterTitle {
+    float: left;
+    font-weight: 700;
+    padding: 5px;
+    padding-bottom: 8px;
+}
+
+.form__inputField {
+    border-radius: 5px;
+    background-color: #222;
+    color: #ffffff
+}
+
+.form__inputField:focus {
+    border-radius: 5px;
+    outline: 1px #ffffff solid;
+}
+
+.form__inputField::-webkit-outer-spin-button,
+.form__inputField::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.form__inputField[type=number] {
+    -moz-appearance: textfield;
+}
+
+.form__operationSelect {
+    background-color: #222;
+    color: #ffffff;
+}
+
+.form__operationSelect:focus {
+    border-radius: 5px;
+    outline: 2px #1c68ff solid;
+}
+
+.form__outputResult {
+    text-align: center;
+}
