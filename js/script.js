@@ -1,13 +1,9 @@
 {
-    const inputValue = document.querySelector(".js-inputValue");
-    const outputValue = document.querySelector(".js-outputValue");
-    const currencySelector = document.querySelector(".js-currencySelector");
-
     const welcome = () => {
         console.log("Hello World!");
     };
 
-    const outputResult = () => {
+    const outputResult = (inputValue, outputValue, currencySelector) => {
         inputValue.addEventListener("input", () => {
             switch (true) {
                 case (currencySelector.value === "plnToEur"):
@@ -26,7 +22,7 @@
         });
     };
 
-    const selectorReset = () => {
+    const selectorReset = (inputValue, outputValue, currencySelector) => {
         currencySelector.addEventListener("change", () => {
             inputValue.value = "";
             outputValue.innerText = "";
@@ -34,9 +30,13 @@
     };
 
     function init() {
+        const inputValue = document.querySelector(".js-inputValue");
+        const outputValue = document.querySelector(".js-outputValue");
+        const currencySelector = document.querySelector(".js-currencySelector");
+
         welcome();
-        outputResult();
-        selectorReset();
+        outputResult(inputValue, outputValue, currencySelector);
+        selectorReset(inputValue, outputValue, currencySelector);
     };
 
     init();
