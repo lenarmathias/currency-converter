@@ -6,6 +6,14 @@ This is a web-based currency converter that allows users to quickly and easily c
 
 ---
 
+## Demo
+
+You can find the live version of my project on GitHub Pages here:
+
+https://lenarmathias.github.io/currency-converter/
+
+---
+
 ## Features
 
 - **Convert between currencies**: Users can select the currency they want to convert from and the currency they want to convert to, and the application will calculate the conversion rate based on exchange rates hardcoded into the application's code.
@@ -61,14 +69,6 @@ At present, there are no known issues with the application. However, if you enco
 ## Future Updates
 
 In future updates, I plan to implement real-time exchange rates and incorporate media queries to make the application more responsive and user-friendly.
-
----
-
-## Demo
-
-You can find the live version of my project on GitHub Pages here:
-
-https://lenarmathias.github.io/currency-converter/
 
 ---
 
