@@ -64,6 +64,14 @@ In future updates, I plan to implement real-time exchange rates and incorporate 
 
 ---
 
+## Demo
+
+You can find the live version of my project on GitHub Pages here:
+
+https://lenarmathias.github.io/currency-converter/
+
+---
+
 ## Contact
 
 If you have any questions or feedback about this currency converter application, please don't hesitate to reach out to me. You can contact me through any of the following channels:
