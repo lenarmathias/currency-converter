@@ -8,23 +8,28 @@
             const ratePlnEur = 4.52;
             const ratePlnUsd = 4.11;
             let convertedValue;
+            let currency;
 
             switch (true) {
                 case (currencySelector.value === "plnToEur"):
-                    convertedValue = `${(inputValue.value / ratePlnEur).toFixed(2)} EUR`;
+                    convertedValue = inputValue.value / ratePlnEur;
+                    currency = "EUR";
                     break;
                 case (currencySelector.value === "eurToPln"):
-                    convertedValue = `${(inputValue.value * ratePlnEur).toFixed(2)} PLN`;
+                    convertedValue = inputValue.value * ratePlnEur;
+                    currency = "PLN";
                     break;
                 case (currencySelector.value === "plnToUsd"):
-                    convertedValue = `${(inputValue.value / ratePlnUsd).toFixed(2)} USD`;
+                    convertedValue = inputValue.value / ratePlnUsd;
+                    currency = "USD";
                     break;
                 case (currencySelector.value === "usdToPln"):
-                    convertedValue = `${(inputValue.value * ratePlnUsd).toFixed(2)} PLN`;
+                    convertedValue = inputValue.value * ratePlnUsd;
+                    currency = "PLN";
                     break;
             };
 
-            outputValue.innerText = `Kwota po przeliczeniu: ${convertedValue}`;
+            outputValue.innerText = `Kwota po przeliczeniu: ${(convertedValue).toFixed(2)} ${currency}`;
         });
     };
 
