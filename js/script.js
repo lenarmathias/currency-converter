@@ -5,20 +5,26 @@
 
     const outputResult = (inputValue, outputValue, currencySelector) => {
         inputValue.addEventListener("input", () => {
+            const ratePlnEur = 4.52;
+            const ratePlnUsd = 4.11;
+            let convertedValue;
+
             switch (true) {
                 case (currencySelector.value === "plnToEur"):
-                    outputValue.innerText = `Kwota po przeliczeniu: ${(inputValue.value / 4.52).toFixed(2)} EUR`;
+                    convertedValue = `${(inputValue.value / ratePlnEur).toFixed(2)} EUR`;
                     break;
                 case (currencySelector.value === "eurToPln"):
-                    outputValue.innerText = `Kwota po przeliczeniu: ${(inputValue.value * 4.52).toFixed(2)} PLN`;
+                    convertedValue = `${(inputValue.value * ratePlnEur).toFixed(2)} PLN`;
                     break;
                 case (currencySelector.value === "plnToUsd"):
-                    outputValue.innerText = `Kwota po przeliczeniu: ${(inputValue.value / 4.11).toFixed(2)} USD`;
+                    convertedValue = `${(inputValue.value / ratePlnUsd).toFixed(2)} USD`;
                     break;
                 case (currencySelector.value === "usdToPln"):
-                    outputValue.innerText = `Kwota po przeliczeniu: ${(inputValue.value * 4.11).toFixed(2)} PLN`;
+                    convertedValue = `${(inputValue.value * ratePlnUsd).toFixed(2)} PLN`;
                     break;
-            }
+            };
+
+            outputValue.innerText = `Kwota po przeliczeniu: ${convertedValue}`;
         });
     };
 
