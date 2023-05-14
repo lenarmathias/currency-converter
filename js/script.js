@@ -10,20 +10,20 @@
             let convertedValue;
             let currency;
 
-            switch (true) {
-                case (currencySelector.value === "plnToEur"):
+            switch (currencySelector.value) {
+                case ("plnToEur"):
                     convertedValue = inputValue.value / ratePlnEur;
                     currency = "EUR";
                     break;
-                case (currencySelector.value === "eurToPln"):
+                case ("eurToPln"):
                     convertedValue = inputValue.value * ratePlnEur;
                     currency = "PLN";
                     break;
-                case (currencySelector.value === "plnToUsd"):
+                case ("plnToUsd"):
                     convertedValue = inputValue.value / ratePlnUsd;
                     currency = "USD";
                     break;
-                case (currencySelector.value === "usdToPln"):
+                case ("usdToPln"):
                     convertedValue = inputValue.value * ratePlnUsd;
                     currency = "PLN";
                     break;
