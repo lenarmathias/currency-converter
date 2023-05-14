@@ -31,7 +31,7 @@
         outputValue.innerText = `Kwota po przeliczeniu: ${(convertedValue).toFixed(2)} ${currency}`;
     };
 
-    const selectorReset = (inputValue, outputValue, currencySelector) => {
+    const selectorReset = (inputValue, outputValue) => {
         inputValue.value = "";
         outputValue.innerText = "";
     };
@@ -43,7 +43,7 @@
 
         welcome();
         inputValue.addEventListener("input", () => outputResult(inputValue, outputValue, currencySelector));
-        currencySelector.addEventListener("change", () => selectorReset(inputValue, outputValue, currencySelector));
+        currencySelector.addEventListener("change", () => selectorReset(inputValue, outputValue));
     };
 
     init();
