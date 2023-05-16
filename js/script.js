@@ -36,7 +36,7 @@
         outputValue.innerText = "";
     };
 
-    function init() {
+    const init = () => {
         const inputValue = document.querySelector(".js-inputValue");
         const outputValue = document.querySelector(".js-outputValue");
         const currencySelector = document.querySelector(".js-currencySelector");
