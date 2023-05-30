@@ -1,8 +1,4 @@
 {
-    const welcome = () => {
-        console.log("Hello World!");
-    };
-
     const outputResult = (inputValue, outputValue, currencySelector) => {
         const ratePlnEur = 4.52;
         const ratePlnUsd = 4.11;
@@ -41,7 +37,6 @@
         const outputValue = document.querySelector(".js-outputValue");
         const currencySelector = document.querySelector(".js-currencySelector");
 
-        welcome();
         inputValue.addEventListener("input", () => outputResult(inputValue, outputValue, currencySelector));
         currencySelector.addEventListener("change", () => selectorReset(inputValue, outputValue));
     };
